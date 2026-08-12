@@ -7,7 +7,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import Logo from "@/components/Logo";
 
 const navLinks = [
-  { href: "/#how-we-help", label: "Our approach", icon: Compass },
+  { href: "/knowledge-hub/guides", label: "Our approach", icon: Compass },
   { href: "/knowledge-hub", label: "Knowledge Hub", icon: BookOpen },
   { href: "/contact", label: "Contact us", icon: Mail },
 ];

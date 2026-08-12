@@ -65,7 +65,7 @@ export default function Hero() {
               <ArrowRight className="h-4 w-4" strokeWidth={2.5} />
             </Link>
             <Link
-              href="#how-we-help"
+              href="/knowledge-hub/questions"
               className="inline-flex items-center rounded-full border-2 border-white/30 px-6 py-3.5 text-sm font-semibold text-white transition hover:border-white/60 hover:bg-white/10"
             >
               How the process works
