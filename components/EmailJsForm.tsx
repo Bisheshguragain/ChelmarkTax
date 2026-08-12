@@ -19,6 +19,9 @@ export default function EmailJsForm({ source, presetTopic, presetSubcategory, pr
 
   async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
+    // React nulls out event.currentTarget once the handler yields (e.g. after
+    // an await), so the form element must be captured synchronously here.
+    const form = event.currentTarget;
     setStatus("sending");
 
     const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -34,11 +37,11 @@ export default function EmailJsForm({ source, presetTopic, presetSubcategory, pr
     }
 
     try {
-      await emailjs.sendForm(serviceId, templateId, event.currentTarget, {
+      await emailjs.sendForm(serviceId, templateId, form, {
         publicKey,
       });
       setStatus("success");
-      event.currentTarget.reset();
+      form.reset();
     } catch (error) {
       console.error("EmailJS send failed", error);
       setStatus("error");
