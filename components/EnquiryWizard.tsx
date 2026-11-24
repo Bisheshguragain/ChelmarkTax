@@ -8,17 +8,6 @@ import ProblemIcon from "@/components/ProblemIcon";
 
 type Stage = "category" | "subcategory" | "contact";
 
-const categoryColors: Record<string, string> = {
-  "vat-enquiry": "bg-blue-600",
-  "paye-compliance-check": "bg-teal-600",
-  "hmrc-penalty-appeal": "bg-rose-600",
-  "self-assessment-enquiry": "bg-purple-600",
-  "cop9-disclosure": "bg-red-700",
-  "worldwide-disclosure-facility": "bg-sky-600",
-  "capital-gains-tax-enquiry": "bg-emerald-600",
-  "corporation-tax-enquiry": "bg-amber-600",
-};
-
 export default function EnquiryWizard() {
   const [stage, setStage] = useState<Stage>("category");
   const [selectedSlug, setSelectedSlug] = useState<string | null>(null);
@@ -83,7 +72,7 @@ export default function EnquiryWizard() {
                 className="group flex items-center gap-3 rounded-lg border border-border bg-background px-4 py-3 text-left text-sm font-medium text-brand transition hover:border-accent-vivid hover:bg-tint-gold"
               >
                 <span
-                  className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white shadow-sm transition group-hover:scale-110 ${categoryColors[problem.slug] ?? "bg-brand"}`}
+                  className={`flex h-8 w-8 shrink-0 items-center justify-center rounded-full text-white shadow-sm transition group-hover:scale-110 bg-brand`}
                 >
                   <ProblemIcon name={problem.icon} className="h-4 w-4" strokeWidth={2.25} />
                 </span>

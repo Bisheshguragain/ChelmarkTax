@@ -70,7 +70,7 @@ export default function EmailJsForm({ source, presetTopic, presetSubcategory, pr
             Full name
           </label>
           <div className="relative">
-            <User className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-blue-600" strokeWidth={2.25} />
+            <User className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-brand" strokeWidth={2.25} />
             <input
               id="name"
               name="name"
@@ -85,7 +85,7 @@ export default function EmailJsForm({ source, presetTopic, presetSubcategory, pr
             Email address
           </label>
           <div className="relative">
-            <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-purple-600" strokeWidth={2.25} />
+            <Mail className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-brand" strokeWidth={2.25} />
             <input
               id="email"
               name="email"
@@ -102,7 +102,7 @@ export default function EmailJsForm({ source, presetTopic, presetSubcategory, pr
           Phone number (optional)
         </label>
         <div className="relative">
-          <Phone className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-amber-600" strokeWidth={2.25} />
+          <Phone className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-brand" strokeWidth={2.25} />
           <input
             id="phone"
             name="phone"
@@ -117,7 +117,7 @@ export default function EmailJsForm({ source, presetTopic, presetSubcategory, pr
           What did the letter say?
         </label>
         <div className="relative">
-          <MessageSquare className="pointer-events-none absolute left-3 top-3 h-4 w-4 text-emerald-600" strokeWidth={2.25} />
+          <MessageSquare className="pointer-events-none absolute left-3 top-3 h-4 w-4 text-brand" strokeWidth={2.25} />
           <textarea
             id="message"
             name="message"
