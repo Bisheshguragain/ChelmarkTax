@@ -20,6 +20,7 @@ const pillars = [
     title: "In-depth guides",
     description: "Full guides to 8 types of HMRC enquiry, from Self Assessment to Worldwide Disclosure.",
     count: problems.length,
+    unit: "page",
   },
   {
     href: "/knowledge-hub/problems",
@@ -27,6 +28,7 @@ const pillars = [
     title: "HMRC problems",
     description: "Focused pages for a specific letter, error or situation, with immediate next steps.",
     count: hmrcProblems.length,
+    unit: "page",
   },
   {
     href: "/knowledge-hub/industries",
@@ -34,13 +36,18 @@ const pillars = [
     title: "Industry guidance",
     description: "How HMRC enquiries typically look for your sector, from landlords to construction.",
     count: industries.length,
+    unit: "page",
   },
   {
     href: "/knowledge-hub/questions",
     icon: HelpCircle,
     title: "Questions & FAQs",
     description: "Direct answers to the questions people ask most after an HMRC letter arrives.",
-    count: problems.reduce((sum, p) => sum + p.faqs.length, 0) + hmrcProblems.reduce((sum, p) => sum + p.faqs.length, 0),
+    count:
+      problems.reduce((sum, p) => sum + p.faqs.length, 0) +
+      hmrcProblems.reduce((sum, p) => sum + p.faqs.length, 0) +
+      industries.reduce((sum, i) => sum + i.faqs.length, 0),
+    unit: "question",
   },
 ];
 
@@ -75,7 +82,7 @@ export default function KnowledgeHubPage() {
                 <pillar.icon className="h-5 w-5" strokeWidth={2} />
               </span>
               <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-accent">
-                {pillar.count} {pillar.count === 1 ? "page" : "pages"}
+                {pillar.count} {pillar.count === 1 ? pillar.unit : `${pillar.unit}s`}
               </p>
               <h2 className="mt-1 text-lg font-semibold text-brand">{pillar.title}</h2>
               <p className="mt-2 flex-1 text-sm text-muted">{pillar.description}</p>

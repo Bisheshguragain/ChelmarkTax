@@ -5,7 +5,8 @@ import { CheckCircle2, Sparkles, AlertTriangle, ListChecks } from "lucide-react"
 import { industries } from "@/data/industries";
 import { problems } from "@/data/problems";
 import { hmrcProblems } from "@/data/hmrcProblems";
-import { industryToGuides, industryToProblems } from "@/lib/relatedContent";
+import { industryToGuides, industryToProblems, industryToBlogs } from "@/lib/relatedContent";
+import { blogPosts } from "@/data/blogPosts";
 import ProblemIcon from "@/components/ProblemIcon";
 import KnowledgeSidebarCta from "@/components/KnowledgeSidebarCta";
 import InlineCta from "@/components/InlineCta";
@@ -42,6 +43,8 @@ export default async function IndustryDetailPage({ params }: PageProps) {
 
   const relatedGuides = problems.filter((p) => (industryToGuides[industry.slug] ?? []).includes(p.slug));
   const relatedProblems = hmrcProblems.filter((p) => (industryToProblems[industry.slug] ?? []).includes(p.slug));
+
+  const relatedPosts = blogPosts.filter((p) => (industryToBlogs[industry.slug] ?? []).includes(p.slug));
 
   const breadcrumbJsonLd = {
     "@context": "https://schema.org",
@@ -196,6 +199,31 @@ export default async function IndustryDetailPage({ params }: PageProps) {
               </div>
             ))}
           </div>
+
+          {relatedPosts.length > 0 && (
+            <div className="mt-10 border-t border-border pt-6">
+              <h2 className="text-xl font-semibold text-brand">Related articles</h2>
+              <p className="mt-2 text-sm text-muted">
+                Longer reads on the topics that come up most often in this sector.
+              </p>
+              <div className="mt-4 grid gap-4 sm:grid-cols-2">
+                {relatedPosts.map((post) => (
+                  <Link
+                    key={post.slug}
+                    href={`/knowledge-hub/blog/${post.slug}`}
+                    className="group flex flex-col rounded-2xl border border-border bg-surface p-5 transition hover:-translate-y-0.5 hover:shadow-md"
+                  >
+                    <p className="text-xs font-medium uppercase tracking-wide text-accent">{post.category}</p>
+                    <h3 className="mt-2 text-sm font-semibold text-brand">{post.title}</h3>
+                    <p className="mt-2 flex-1 text-xs text-muted">{post.excerpt}</p>
+                    <span className="mt-3 text-xs font-semibold text-brand group-hover:text-accent">
+                      Read the article →
+                    </span>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
 
           {relatedGuides.length > 0 && (
             <div className="mt-10 border-t border-border pt-6">

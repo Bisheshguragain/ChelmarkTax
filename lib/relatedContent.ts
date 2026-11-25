@@ -44,6 +44,9 @@ export const blogToGuides: Record<string, string[]> = {
   "hmrc-risk-based-approach-to-enquiries": ["self-assessment-enquiry"],
   "first-48-hours-after-hmrc-letter": ["self-assessment-enquiry", "vat-enquiry"],
   "hmrc-penalty-behaviour-categories-explained": ["hmrc-penalty-appeal"],
+  "cis-tax-explained-contractors-subcontractors": ["paye-compliance-check"],
+  "claim-back-cis-deductions-self-assessment": ["self-assessment-enquiry", "paye-compliance-check"],
+  "cis-penalties-and-hmrc-compliance-checks": ["paye-compliance-check", "hmrc-penalty-appeal"],
 };
 
 export const blogToProblems: Record<string, string[]> = {
@@ -52,6 +55,17 @@ export const blogToProblems: Record<string, string[]> = {
   "hmrc-risk-based-approach-to-enquiries": ["compliance-check-letter", "discovery-assessment"],
   "first-48-hours-after-hmrc-letter": ["compliance-check-letter", "hmrc-nudge-letter"],
   "hmrc-penalty-behaviour-categories-explained": ["late-filing-penalty", "discovery-assessment"],
+  "cis-tax-explained-contractors-subcontractors": ["compliance-check-letter"],
+  "claim-back-cis-deductions-self-assessment": ["incorrect-self-assessment-return"],
+  "cis-penalties-and-hmrc-compliance-checks": ["compliance-check-letter", "late-filing-penalty"],
+};
+
+export const industryToBlogs: Record<string, string[]> = {
+  "construction-cis": [
+    "cis-tax-explained-contractors-subcontractors",
+    "claim-back-cis-deductions-self-assessment",
+    "cis-penalties-and-hmrc-compliance-checks",
+  ],
 };
 
 export const industryToGuides: Record<string, string[]> = {

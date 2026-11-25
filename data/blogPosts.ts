@@ -681,4 +681,350 @@ export const blogPosts: BlogPost[] = [
     ],
     tags: ["Penalties", "HMRC Enquiries", "Tax Disputes"],
   },
+  {
+    slug: "cis-tax-explained-contractors-subcontractors",
+    title: "CIS Tax Explained: What Contractors and Subcontractors Need to Know",
+    excerpt:
+      "How the Construction Industry Scheme works in practice — deduction rates, verification, monthly returns and the records HMRC expects you to keep.",
+    publishedDate: "2026-11-25",
+    category: "Construction Industry Scheme",
+    intro:
+      "The Construction Industry Scheme (CIS) is HMRC's system for collecting tax at source from payments made to subcontractors in the construction industry. Contractors deduct money from what they pay subcontractors and pass it to HMRC, and the subcontractor treats those deductions as tax already paid. It sounds simple, but CIS has its own registration rules, monthly deadlines and record-keeping requirements — and it is one of the first things HMRC looks at when it opens a tax enquiry into a construction business. This guide sets out how the scheme works, who it covers, and where contractors and subcontractors most often go wrong.",
+    sections: [
+      {
+        heading: "Who CIS Applies To",
+        paragraphs: [
+          "CIS covers payments for construction work in the UK, which is defined more widely than many people expect. It includes building, alterations, repairs, demolition, decorating, site preparation and installing systems such as heating, lighting or power. A contractor is a business that pays subcontractors for construction work, and that can include companies that do no building themselves but spend more than £3 million a year on construction — property developers, housing associations and some public bodies, for example.",
+          "A subcontractor is anyone carrying out that work for a contractor, whether as a sole trader, a partnership or a limited company. The scheme applies based on what the work is and who is paying for it, not on how a business describes itself, which is why mixed-activity businesses sometimes find they have CIS obligations they had not planned for.",
+        ],
+      },
+      {
+        heading: "The Three Deduction Rates",
+        paragraphs: [
+          "The rate a contractor deducts depends on the subcontractor's status with HMRC. Contractors must verify a subcontractor with HMRC before making the first payment, and HMRC tells them which rate to apply. Deductions are taken from the labour element of an invoice only — the cost of materials is paid in full.",
+        ],
+        table: {
+          headers: ["Subcontractor status", "Deduction rate", "What it means"],
+          rows: [
+            ["Registered for CIS", "20%", "The standard rate for most subcontractors"],
+            ["Not registered for CIS", "30%", "Applies where the subcontractor has not registered or HMRC cannot verify them"],
+            ["Gross payment status", "0%", "Paid in full with no deduction, subject to passing HMRC's tests"],
+          ],
+        },
+      },
+      {
+        heading: "What Contractors Have to Do Each Month",
+        paragraphs: [
+          "Contractors have a regular monthly cycle. They file a CIS300 return covering payments made in the tax month, which runs from the 6th of one month to the 5th of the next, and they pay the deductions over to HMRC. The return is due by the 19th, and electronic payment of the deductions is due by the 22nd. Subcontractors are entitled to a payment and deduction statement, which they need to complete their own tax position.",
+          "A return is needed even in a month with no payments, unless the contractor has told HMRC that they will not be making payments for a period. Missed nil returns are a surprisingly common source of penalties.",
+        ],
+        list: [
+          "Register as a contractor with HMRC before taking on any subcontractors",
+          "Verify every new subcontractor before the first payment",
+          "Apply the rate HMRC gives you to the labour element only",
+          "File a CIS300 return by the 19th after each tax month",
+          "Pay the deductions to HMRC by the 22nd if paying electronically",
+          "Give subcontractors a statement of what you paid and deducted",
+        ],
+      },
+      {
+        heading: "Gross Payment Status",
+        paragraphs: [
+          "Gross payment status lets a subcontractor receive payment without deductions, which helps cash flow considerably. To qualify, a business must pass three tests: a business test, a turnover test and a compliance test. The turnover test looks at construction turnover excluding VAT and materials — broadly £30,000 for a sole trader, with higher figures for partnerships and companies depending on the number of partners or directors.",
+          "The compliance test is where many applications fall down. It requires all tax returns and payments to be up to date, and HMRC can withdraw gross payment status if a business later falls behind. Anyone who relies on gross payment status should treat keeping filing and payment dates current as a priority rather than an afterthought.",
+        ],
+      },
+      {
+        heading: "Records HMRC Expects You to Keep",
+        paragraphs: [
+          "Contractors need to keep records for at least three years after the end of the tax year the payments relate to. HMRC checks that what was reported on CIS300 returns agrees with the underlying payments, the verification records and the accounts.",
+        ],
+        list: [
+          "Payments made to each subcontractor, split between labour and materials",
+          "Deductions made and the verification reference used for each subcontractor",
+          "Copies of CIS300 returns and evidence that deductions were paid",
+          "Payment and deduction statements issued to subcontractors",
+          "Subcontractor invoices and the contracts they relate to",
+        ],
+      },
+      {
+        heading: "Where CIS Sits Within an HMRC Enquiry",
+        paragraphs: [
+          "CIS rarely gets looked at in isolation. A compliance check into a construction business will often cover PAYE, VAT and employment status at the same time, because the same underlying question — who is actually an employee and who is genuinely self-employed — affects all of them. If you receive a letter asking about your subcontractors, the best first step is to read exactly what is being requested and which periods it covers before sending anything back.",
+          "If you are dealing with an HMRC tax enquiry into a construction business, whether in London or elsewhere in the UK, getting specialist input early is usually cheaper than correcting a response that turned out to be incomplete.",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I need to register for CIS if I only use subcontractors occasionally?",
+        answer:
+          "Yes. If you pay someone for construction work and you are a contractor within the scheme's definition, you need to register before making the first payment, however infrequently you use subcontractors.",
+      },
+      {
+        question: "Are materials subject to CIS deductions?",
+        answer:
+          "No. Deductions apply only to the labour element of a payment. The cost of materials, equipment hire and VAT is excluded, so invoices need to show these separately.",
+      },
+      {
+        question: "What happens if I pay a subcontractor without verifying them?",
+        answer:
+          "HMRC may treat the subcontractor as unregistered, so the higher 30% rate would apply, and a contractor who deducts the wrong amount can be held responsible for the shortfall.",
+      },
+      {
+        question: "Can limited companies be CIS subcontractors?",
+        answer:
+          "Yes. Companies can register as subcontractors, and CIS deductions taken from their payments can be set against their PAYE and National Insurance liabilities.",
+      },
+      {
+        question: "How long do I need to keep CIS records?",
+        answer:
+          "At least three years after the end of the tax year the payments relate to, though keeping them for longer is sensible where an HMRC check is in progress.",
+      },
+      {
+        question: "Does CIS apply to work done outside the UK?",
+        answer:
+          "CIS applies to construction operations carried out in the UK, so the location of the work matters more than where the business is based.",
+      },
+    ],
+    metaTitle: "CIS Tax Explained for Contractors",
+    metaDescription:
+      "How CIS works: deduction rates, verification, monthly returns and gross payment status, plus the records HMRC expects. Tax enquiry guidance for contractors.",
+    focusKeyword: "CIS tax",
+    keywords: [
+      "CIS tax",
+      "Construction Industry Scheme",
+      "CIS deduction rates",
+      "gross payment status",
+      "tax enquiry London",
+      "HMRC tax enquiry help",
+      "tax enquiry specialists UK",
+    ],
+    tags: ["Construction Industry Scheme", "CIS", "Construction", "HMRC Compliance"],
+  },
+  {
+    slug: "claim-back-cis-deductions-self-assessment",
+    title: "How to Claim Back CIS Deductions on Your Self Assessment Return",
+    excerpt:
+      "Sole trader subcontractors can often reclaim tax taken under CIS. Here is how to report it correctly, what evidence to keep and the mistakes that delay a refund.",
+    publishedDate: "2026-11-25",
+    category: "Self Assessment",
+    intro:
+      "If you work as a subcontractor, your contractor will probably have deducted tax from your payments under the Construction Industry Scheme. That tax counts as money you have already paid towards your bill, and if too much was taken, you can claim the difference back. For sole traders, the claim is made through the Self Assessment return — and it is also one of the places where errors creep in, because the figures need to match what contractors reported to HMRC. This post explains how the process works, step by step, and what to do if the numbers do not agree.",
+    sections: [
+      {
+        heading: "How CIS Deductions Work Against Your Tax Bill",
+        paragraphs: [
+          "CIS deductions are not an extra tax. They are advance payments towards your income tax and National Insurance. When you complete your Self Assessment return, you work out your tax on your profits as normal, then subtract the CIS deductions that were taken during the year. If the deductions are higher than the tax you owe, HMRC repays the balance; if they are lower, you pay the difference.",
+          "Because deductions come off your gross labour payments before your expenses are considered, many subcontractors with significant costs find they have overpaid and are due a refund — often a substantial one.",
+        ],
+      },
+      {
+        heading: "What to Report and Where",
+        paragraphs: [
+          "On the self-employment pages of the return, you report your total turnover — the gross amount before any CIS deduction — and then enter the total CIS deducted in the relevant box. Reporting only the net amount you received is a common mistake that understates income and breaks the link with what contractors submitted.",
+        ],
+        table: {
+          headers: ["Item", "What to enter"],
+          rows: [
+            ["Turnover", "Gross amount invoiced for labour, before CIS deductions"],
+            ["Allowable expenses", "Costs wholly and exclusively for the business"],
+            ["Tax taken off by contractors", "Total CIS deductions shown on your payment and deduction statements"],
+          ],
+        },
+      },
+      {
+        heading: "Evidence You Need to Keep",
+        paragraphs: [
+          "Your contractors should give you a payment and deduction statement each month. These are the evidence behind the figure you put on your return, and HMRC can ask to see them. If one is missing, ask the contractor for a copy as soon as you notice, because reconstructing the figure from bank statements alone is slow and unreliable.",
+        ],
+        list: [
+          "Monthly payment and deduction statements from every contractor",
+          "Your own invoices showing labour and materials separately",
+          "Bank statements matching the payments you received",
+          "A running record of the CIS deducted for the tax year",
+          "Receipts for expenses you plan to claim",
+        ],
+      },
+      {
+        heading: "Deadlines and Getting Repaid",
+        paragraphs: [
+          "The usual Self Assessment dates apply: 31 October for a paper return and 31 January for an online return after the tax year ends on 5 April. Filing early is worth it for CIS subcontractors, because a repayment cannot be processed until the return is in. Late filing brings penalties even where you are due a refund, so the deadline still matters.",
+          "If a repayment is delayed, the cause is often a mismatch — a contractor who did not report a deduction, or reported it under the wrong reference. HMRC may hold the refund while it checks, and that can sometimes lead to a wider review of the return.",
+        ],
+      },
+      {
+        heading: "When the Numbers Do Not Match",
+        paragraphs: [
+          "HMRC compares the deductions you claim with those contractors have reported. If your figure is higher than theirs, expect questions. Before you file, compare your statements against your own records and chase any contractor whose statement looks wrong.",
+          "If HMRC opens an enquiry into your return after a CIS claim, the same documents will be asked for. Having them organised from the start makes the process far quicker. If you would like help dealing with an HMRC tax enquiry, our specialists work with subcontractors across London and the rest of the UK.",
+        ],
+        list: [
+          "Do not estimate your CIS figure — use the statements",
+          "Report gross turnover, not just what landed in your bank account",
+          "Query missing statements with the contractor promptly",
+          "Keep records for at least five years after the filing deadline for the tax year",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Can I claim back CIS before the end of the tax year?",
+        answer:
+          "Sole traders generally reclaim through their Self Assessment return after the tax year ends, so the refund cannot usually be processed until the return is filed.",
+      },
+      {
+        question: "What if a contractor did not give me a deduction statement?",
+        answer:
+          "Ask for a copy straight away. Contractors are required to provide these, and you will need them as evidence for the figure on your return.",
+      },
+      {
+        question: "Do limited company subcontractors claim through Self Assessment?",
+        answer:
+          "No. A limited company offsets CIS deductions against its own PAYE and National Insurance payments, and any excess can be repaid after the end of the tax year.",
+      },
+      {
+        question: "Why is my CIS refund taking so long?",
+        answer:
+          "The most common reason is a mismatch between your claimed deductions and what contractors reported. HMRC may hold the repayment while it checks the figures.",
+      },
+      {
+        question: "Do I still need to file a return if I think I am owed money?",
+        answer:
+          "Yes. A repayment cannot be made without a return, and a late return can still attract a penalty even if no tax is due.",
+      },
+      {
+        question: "Does the 30% deduction rate mean I owe more tax?",
+        answer:
+          "Not necessarily. The deduction is a payment on account, so if it is more than your final bill, you can claim the excess back through your return.",
+      },
+    ],
+    metaTitle: "Claim Back CIS Deductions on Self Assessment",
+    metaDescription:
+      "How subcontractors reclaim CIS tax on a Self Assessment return: what to report, evidence to keep, deadlines and why refunds get delayed.",
+    focusKeyword: "claim back CIS deductions",
+    keywords: [
+      "claim back CIS deductions",
+      "CIS Self Assessment",
+      "CIS tax refund",
+      "subcontractor tax return",
+      "tax enquiry London",
+      "HMRC tax enquiry help",
+    ],
+    tags: ["Self Assessment", "CIS", "Tax Refunds", "Construction"],
+  },
+  {
+    slug: "cis-penalties-and-hmrc-compliance-checks",
+    title: "CIS Penalties and the Mistakes That Lead to an HMRC Compliance Check",
+    excerpt:
+      "Late CIS300 returns, unverified subcontractors and wrong deduction rates all draw HMRC's attention. Here is what the penalties look like and how to avoid them.",
+    publishedDate: "2026-11-25",
+    category: "Construction Industry Scheme",
+    intro:
+      "Construction is one of the sectors HMRC checks most closely, and the Construction Industry Scheme gives it plenty of data to work with. Every monthly CIS300 return is matched against subcontractor records, and gaps or inconsistencies can lead to penalties or a full compliance check. Most CIS problems come from a handful of repeated mistakes rather than anything deliberate. Here is what triggers HMRC's attention, how penalties work, and what to do if you receive a letter about your CIS returns.",
+    sections: [
+      {
+        heading: "The Most Common CIS Problems",
+        paragraphs: [
+          "HMRC sees the same issues again and again. None of them is complicated, which is why they are so avoidable — but each one can quietly build up over several tax years before anyone notices.",
+        ],
+        list: [
+          "Late or missing monthly CIS300 returns, including nil returns",
+          "Subcontractors paid without being verified first",
+          "The wrong deduction rate applied to a payment",
+          "Deductions taken but not paid over to HMRC on time",
+          "Payments to workers treated as subcontractor payments when they are really employees",
+          "Materials and labour not separated on invoices",
+        ],
+      },
+      {
+        heading: "How CIS Late Filing Penalties Work",
+        paragraphs: [
+          "A late CIS300 return attracts a fixed penalty immediately after the deadline, and the amounts increase the longer the return stays outstanding. The structure is designed to escalate: a first penalty applies straight away, further penalties follow at two months, and larger penalties apply at six and twelve months, with the higher amounts being linked to the size of the deductions involved.",
+          "Interest and further charges can apply on late payment of deductions. Penalties can be appealed where there was a reasonable excuse, but a general lack of time or an accountant's error is not usually enough on its own.",
+        ],
+        table: {
+          headers: ["Failure", "Typical consequence"],
+          rows: [
+            ["Late CIS300 return", "Fixed penalties that increase over time"],
+            ["Late payment of deductions", "Interest and possible additional penalties"],
+            ["Wrong or inaccurate return", "Penalty based on the behaviour behind the error"],
+            ["Failure to verify a subcontractor", "Contractor may be liable for tax not deducted"],
+          ],
+        },
+      },
+      {
+        heading: "Why Contractors Become Liable for Tax They Did Not Deduct",
+        paragraphs: [
+          "One of the less obvious risks is that a contractor who fails to deduct the right amount can be held responsible for the shortfall. If a subcontractor should have been paid at 20% or 30% but was paid in full, HMRC can look to the contractor for the missing tax unless there is a good reason for the mistake. This is why verification before the first payment is so important, and why records of each verification should be kept.",
+        ],
+      },
+      {
+        heading: "What Triggers a Compliance Check",
+        paragraphs: [
+          "HMRC uses data matching to compare contractor returns, subcontractor tax returns and VAT figures. Triggers include a subcontractor claiming deductions that a contractor never reported, sudden changes in the number of subcontractors, high materials claims, and workers who look like employees on paper. A check may start with a short letter asking for specific records, and it can widen if the first answers raise new questions.",
+          "If you are dealing with a tax enquiry in London or elsewhere in the UK, the first priority is to read the letter, note the deadline, and gather what has actually been asked for — nothing more, nothing less.",
+        ],
+      },
+      {
+        heading: "What to Do If HMRC Writes to You About CIS",
+        paragraphs: [
+          "Most letters can be handled calmly if the response is organised. Sending a partial answer or estimating figures often leads to more questions, not fewer.",
+        ],
+        list: [
+          "Note the response deadline and the periods covered",
+          "Reconcile your CIS300 returns against payments and bank records",
+          "Check every subcontractor has a verification record",
+          "Correct any genuine errors voluntarily rather than waiting to be asked",
+          "Consider specialist help before replying, particularly where employment status is in question",
+        ],
+      },
+    ],
+    faqs: [
+      {
+        question: "Do I have to file a CIS300 return if I paid no subcontractors this month?",
+        answer:
+          "Yes, unless you have told HMRC you will not be making payments for a period. A nil return is still a return, and missing one can lead to a penalty.",
+      },
+      {
+        question: "Can I appeal a CIS late filing penalty?",
+        answer:
+          "Yes. You can appeal if you have a reasonable excuse, though simply being busy or relying on someone else is rarely accepted without more.",
+      },
+      {
+        question: "What if I applied the wrong deduction rate by mistake?",
+        answer:
+          "Correct it as soon as you find it. HMRC generally treats an error disclosed voluntarily far more favourably than one it uncovers itself.",
+      },
+      {
+        question: "Can HMRC check CIS for earlier years?",
+        answer:
+          "Yes. Time limits depend on the type of error, and they are longer where carelessness or deliberate behaviour is involved, so older periods can be reviewed.",
+      },
+      {
+        question: "Does a CIS compliance check also cover VAT and PAYE?",
+        answer:
+          "Often it does, because employment status and VAT treatment of construction services are closely linked to CIS and are commonly reviewed together.",
+      },
+      {
+        question: "Should I speak to HMRC before replying to their letter?",
+        answer:
+          "Read the letter and gather your records first. Where the position is complicated, it is usually better to take advice before making contact.",
+      },
+    ],
+    metaTitle: "CIS Penalties & HMRC Compliance Checks",
+    metaDescription:
+      "What triggers an HMRC compliance check on CIS, how late filing penalties escalate and the mistakes contractors make. Tax enquiry help in London and the UK.",
+    focusKeyword: "CIS penalties",
+    keywords: [
+      "CIS penalties",
+      "CIS300 late filing",
+      "HMRC compliance check CIS",
+      "construction tax enquiry",
+      "tax enquiry London",
+      "HMRC tax enquiry help",
+      "tax enquiry specialists UK",
+    ],
+    tags: ["Construction Industry Scheme", "CIS", "Penalties", "Compliance Checks"],
+  },
 ];
