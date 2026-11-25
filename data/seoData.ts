@@ -32,6 +32,8 @@ export const seoData: SeoPage[] = problems.flatMap((problem) =>
       commonMistakes: problem.commonMistakes,
       whatHappensNext: problem.whatHappensNext,
       cityContext: city.context,
+      cityTriggers: city.enquiryTriggers ?? [],
+      cityFaqs: city.localFaqs ?? [],
       typicalDeadline: problem.typicalDeadline,
       checklist: problem.checklist,
       icon: problem.icon,

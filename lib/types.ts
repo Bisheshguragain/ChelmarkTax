@@ -54,6 +54,8 @@ export type City = {
   name: string;
   region: string;
   context: string;
+  enquiryTriggers?: string[];
+  localFaqs?: FaqItem[];
 };
 
 export type SeoPage = {
@@ -75,6 +77,8 @@ export type SeoPage = {
   commonMistakes: string[];
   whatHappensNext: string[];
   cityContext: string;
+  cityTriggers: string[];
+  cityFaqs: FaqItem[];
   typicalDeadline: string;
   checklist: string[];
   icon: IconName;

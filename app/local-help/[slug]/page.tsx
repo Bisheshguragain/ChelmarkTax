@@ -83,7 +83,7 @@ export default async function LocalHelpDetailPage({ params }: PageProps) {
   const faqJsonLd = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: entry.faqs.map((faq) => ({
+    mainEntity: [...entry.faqs, ...entry.cityFaqs].map((faq) => ({
       "@type": "Question",
       name: faq.question,
       acceptedAnswer: {
@@ -191,6 +191,21 @@ export default async function LocalHelpDetailPage({ params }: PageProps) {
           <p className="mt-3 text-sm leading-relaxed text-foreground/90">
             {entry.cityContext}
           </p>
+          {entry.cityTriggers.length > 0 && (
+            <div className="mt-5 rounded-2xl border border-tint-gold-border bg-tint-gold p-5">
+              <h3 className="text-sm font-semibold text-brand">
+                What HMRC commonly queries in {entry.cityName}
+              </h3>
+              <ul className="mt-3 space-y-2">
+                {entry.cityTriggers.map((trigger) => (
+                  <li key={trigger} className="flex items-start gap-2 text-sm text-brand">
+                    <CheckCircle2 className="mt-0.5 h-4 w-4 shrink-0 text-accent" strokeWidth={2} />
+                    {trigger}
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
 
           {/* Documentation checklist */}
           <div className="mt-10 rounded-2xl border border-border bg-background p-6">
@@ -240,7 +255,7 @@ export default async function LocalHelpDetailPage({ params }: PageProps) {
             Frequently asked questions about a {entry.problemShortName} case
           </h2>
           <div className="mt-4 divide-y divide-border rounded-2xl border border-border bg-surface">
-            {entry.faqs.map((faq) => (
+            {[...entry.faqs, ...entry.cityFaqs].map((faq) => (
               <div key={faq.question} className="p-5">
                 <h3 className="text-sm font-semibold text-brand">{faq.question}</h3>
                 <p className="mt-2 text-sm text-muted">{faq.answer}</p>
